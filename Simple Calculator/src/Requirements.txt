@@ -1,0 +1,10 @@
+**Design a Calculator**
+
+1. User should be able to add 2 numbers
+2. User should be able to subtract 2 numbers
+3. User should be able to multiply 2 numbers
+4. User should be able to divide 2 numbers
+5. User should be able to Switch ON/OFF calculator
+6. User should be able to input 2 numbers
+7. User will not give 0 as input for division operation in denominator
+8. User can only do one operation at a time i.e either add only or subtract only
