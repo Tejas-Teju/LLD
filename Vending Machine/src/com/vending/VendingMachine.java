@@ -39,6 +39,15 @@ public class VendingMachine {
                 return false;
             }
         }
+
+        return true;
+    }
+
+    public boolean validate(Order order) {
+        for (Map.Entry<Product, Integer> p : order.getOrderedItems().entrySet()) {
+            if (slots.get(p.getKey().getSlotNo()).qty < p.getValue()) return false;
+        }
+
         return true;
     }
 

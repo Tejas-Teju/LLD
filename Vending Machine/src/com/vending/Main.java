@@ -25,15 +25,15 @@ public class Main {
         vm.displayCoinsData();
 
         Order order = new Order();
-        order.addItems(p1, 2);
-        order.addItems(p2, 5);
+        order.addItems(p1, 0);
+        order.addItems(p2, 11);
         order.confirmOrder();
 
         Map<Coin, Integer> insertedcoins = new HashMap<>();
         insertedcoins.put(Coin.TEN, 5);
-        insertedcoins.put(Coin.FIVE, 2);
-        insertedcoins.put(Coin.TWO, 2);
-        insertedcoins.put(Coin.ONE, 1);
+        insertedcoins.put(Coin.FIVE, 1);
+        insertedcoins.put(Coin.TWO, 0);
+        insertedcoins.put(Coin.ONE, 0);
         order.pay(vm, insertedcoins);
 
         vm.displayCoinsData();
